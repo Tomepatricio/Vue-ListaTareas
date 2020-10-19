@@ -40,13 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
             guardarTarea: function (index) {
                 let tarea = this.tareas[index];
                 tarea.editar = false;
-                delete tarea.aux;
             },
             restablecerTarea: function (index) {
                 let tarea = this.tareas[index];
                 tarea.titulo = tarea.aux;
                 tarea.editar = false;
-                delete tarea.aux;
             },
             shuffleTareas: function () {
                 let array = this.tareas;
